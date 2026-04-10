@@ -1,0 +1,23 @@
+{
+  "name": "meu-direito-previdenciario",
+  "version": "1.0.0",
+  "description": "Site informativo sobre direitos previdenciários no Brasil",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "previdencia",
+    "inss",
+    "brasil",
+    "educacao",
+    "direitos"
+  ],
+  "author": "Projeto de Extensão Universitária",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/meu-direito-previdenciario.git"
+  }
+}

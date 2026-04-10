@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Direito Previdenciário</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🛡️ Meu Direito Previdenciário</h1>
+            <p>A Previdência protege você e sua família. Saiba como acessar seus benefícios de forma simples e gratuita.</p>
+            <button class="btn-primary" onclick="scrollToSection('beneficios')">📋 Descubra seus direitos agora</button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-items">
+            <button onclick="scrollToSection('inicio')">Início</button>
+            <button onclick="scrollToSection('quem-tem-direito')">Quem tem direito</button>
+            <button onclick="scrollToSection('como-contribuir')">Como contribuir</button>
+            <button onclick="scrollToSection('beneficios')">Benefícios</button>
+            <button onclick="scrollToSection('aposentadoria')">Aposentadorias</button>
+            <button onclick="scrollToSection('bpc')">BPC/LOAS</button>
+            <button onclick="scrollToSection('como-pedir')">Como pedir</button>
+            <button onclick="scrollToSection('faq')">Perguntas</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Quem tem direito -->
+        <section id="quem-tem-direito" class="section card">
+            <h2>✅ Quem tem direito à Previdência?</h2>
+            <p>Todos os trabalhadores que contribuem (ou já contribuíram) para a Previdência Social. A proteção também alcança a família do segurado.</p>
+            
+            <div class="grid">
+                <div class="card-item">
+                    <h3>👨‍🏭 Empregado com carteira</h3>
+                    <p>Trabalhador urbano ou rural com CTPS assinada.</p>
+                </div>
+                <div class="card-item">
+                    <h3>🏠 Empregado doméstico</h3>
+                    <p>Governanta, jardineiro, caseiro, doméstica.</p>
+                </div>
+                <div class="card-item">
+                    <h3>🛠️ Autônomo / MEI</h3>
+                    <p>Comerciante, ambulante, feirante, microempreendedor.</p>
+                </div>
+                <div class="card-item">
+                    <h3>🌾 Trabalhador rural</h3>
+                    <p>Agricultor familiar, pescador artesanal (segurado especial).</p>
+                </div>
+                <div class="card-item">
+                    <h3>👩‍🎓 Facultativo</h3>
+                    <p>Dona de casa, estudante, desempregado, síndico não remunerado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como contribuir -->
+        <section id="como-contribuir" class="section card">
+            <h2>💰 Como Contribuir?</h2>
+            <p>A contribuição varia conforme o tipo de segurado:</p>
+            
+            <div class="info-box">
+                <h3>📌 MEI (Microempreendedor Individual)</h3>
+                <p>Faturamento máximo de R$ 81 mil por ano. Paga <strong>5% do salário mínimo</strong> pelo DAS (Documento de Arrecadação Simplificada).</p>
+            </div>
+
+            <div class="info-box">
+                <h3>📌 Autônomo</h3>
+                <p><strong>Plano simplificado (11%)</strong> – sobre 1 salário mínimo. Válido para aposentadoria por idade, auxílio-doença, pensão por morte.</p>
+            </div>
+
+            <div class="alert">
+                <strong>⚠️ Atenção:</strong> O pagamento em dia é essencial. Atrasos podem prejudicar a <strong>carência</strong> (número mínimo de contribuições para ter direito aos benefícios).
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section id="beneficios" class="section">
+            <h2>📊 Tabela de Benefícios</h2>
+            <div class="table-responsive">
+                <table class="benefits-table">
+                    <thead>
+                        <tr>
+                            <th>Benefício</th>
+                            <th>Para Quem</th>
+                            <th>Requisitos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Aposentadoria por Idade</strong></td>
+                            <td>Urbano: Homem 65 anos, Mulher 62 anos</td>
+                            <td>15 anos de contribuição</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aposentadoria por Tempo de Contribuição</strong></td>
+                            <td>Homem 35 anos, Mulher 30 anos</td>
+                            <td>Tempo de contribuição completo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Auxílio-doença</strong></td>
+                            <td>Segurado incapacitado</td>
+                            <td>12 meses de contribuição</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salário-maternidade</strong></td>
+                            <td>Mãe gestante</td>
+                            <td>10 meses de contribuição</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pensão por Morte</strong></td>
+                            <td>Dependentes do segurado falecido</td>
+                            <td>Ter contribuído</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Auxílio-reclusão</strong></td>
+                            <td>Dependentes de preso</td>
+                            <td>Último salário até R$ 1.621,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Aposentadorias -->
+        <section id="aposentadoria" class="section card">
+            <h2>🎯 Aposentadorias Especiais</h2>
+            
+            <div class="info-box">
+                <h3>🔄 Conversão de Tempo</h3>
+                <p>Trabalho em condições especiais (insalubre, perigoso) pode ser convertido em tempo comum com acréscimo:</p>
+                <ul>
+                    <li><strong>Mulher:</strong> 1 mês de trabalho especial = 1,2 mês de contribuição comum</li>
+                    <li><strong>Homem:</strong> 1 mês de trabalho especial = 1,4 mês de contribuição comum</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <strong>💡 Dica:</strong> Não incide Fator Previdenciário – você recebe 100% do salário de contribuição.
+            </div>
+        </section>
+
+        <!-- BPC/LOAS -->
+        <section id="bpc" class="section card">
+            <h2>🤝 BPC/LOAS - Benefício Assistencial</h2>
+            <p>Para quem <strong>NUNCA contribuiu</strong> para a Previdência:</p>
+            
+            <div class="info-box">
+                <h3>👴 Idoso (65 anos ou mais)</h3>
+                <p><strong>Renda familiar:</strong> inferior a 1/4 do salário mínimo <strong>por pessoa</strong> da família.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>♿ Pessoa com Deficiência</h3>
+                <p>Mesmos requisitos de renda. Precisa comprovar a deficiência com laudo médico.</p>
+            </div>
+
+            <div class="alert">
+                <strong>📌 Importante:</strong> O BPC é uma ajuda assistencial, não é aposentadoria. Você recebe 1 salário mínimo (R$ 1.621,00).
+            </div>
+        </section>
+
+        <!-- Como Pedir -->
+        <section id="como-pedir" class="section card">
+            <h2>📞 Como Pedir um Benefício?</h2>
+            
+            <div class="info-box">
+                <h3>🌐 Pelo Site (Recomendado)</h3>
+                <p>Acesse <a href="https://meu.inss.gov.br" target="_blank">Meu INSS</a> e solicite online. É rápido e seguro!</p>
+            </div>
+
+            <div class="info-box">
+                <h3>☎️ Pelo Telefone</h3>
+                <p>Ligue para <strong>135</strong> (ligação gratuita) de segunda a sexta, das 7h às 22h.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>🏢 Presencialmente</h3>
+                <p>Procure uma Agência do INSS ou um CRAS (Centro de Referência de Assistência Social) mais próximo.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <h2>❓ Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <h3>Como faço para saber meu tempo de contribuição?</h3>
+                <p>Acesse <a href="https://meu.inss.gov.br" target="_blank">Meu INSS</a>, faça login e procure por "Extrato de Contribuição". Lá você vê tudo!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Posso trabalhar e receber aposentadoria?</h3>
+                <p>Sim! Você pode trabalhar e receber aposentadoria. Não há limite de renda. Mas se continuar contribuindo, sua aposentadoria pode aumentar.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>O que é carência?</h3>
+                <p>É o número mínimo de contribuições mensais para ter direito ao benefício. Geralmente 180 meses (15 anos) para aposentadoria, ou 12 meses para auxílio-doença.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Sou MEI, tenho direito a todos os benefícios?</h3>
+                <p>Sim, desde que mantenha o pagamento do DAS em dia. Tem direito a aposentadoria por idade, auxílio-doença, salário-maternidade, pensão por morte, etc.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Qual é o valor mínimo da aposentadoria?</h3>
+                <p>O valor mínimo é de 1 salário mínimo (R$ 1.621,00 em 2026). Mas você pode receber mais se contribuiu com salários maiores.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>📚 Créditos</h3>
+            <p><strong>Professora Orientadora:</strong> Ana Paula Lima Cardoso da Silveira</p>
+            <p><strong>Alunos:</strong> Jamile dos Santos Porto, Breno Silva Teixeira, Nathali Souza Silva, Romilson Reian N. E Nogueira, Lourrane Nogueira</p>
+            
+            <h3>🔗 Links Úteis</h3>
+            <p>
+                <a href="https://www.gov.br/inss" target="_blank">INSS Oficial</a> | 
+                <a href="https://meu.inss.gov.br" target="_blank">Meu INSS</a> | 
+                <a href="tel:135">Telefone 135</a>
+            </p>
+            <p class="text-sm">© 2026 - Projeto informativo de extensão universitária</p>
+            <p class="text-xs">Conteúdo baseado em fontes oficiais da Previdência Social</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">⬆️</button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
